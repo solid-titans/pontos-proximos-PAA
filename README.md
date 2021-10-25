@@ -5,8 +5,8 @@ Trabalho de Projeto e Análise de Algoritmos de pontos próximos
 ## Objetivos
 
 - [ ] Criar uma solução O(n*log(n)) 
-- [ ] Criar uma solução O(n*log(n)²)
-- [ ] Criar uma solução O(n²) 
+- [x] Criar uma solução O(n*log(n)²)
+- [x] Criar uma solução O(n²) 
 
 # Soluções:
 
