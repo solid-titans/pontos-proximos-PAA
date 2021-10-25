@@ -1,5 +1,12 @@
 # Pontos próximos em PAA
 
+<div align="center">
+
+  <a href="#" alt="License">
+        <img src="https://github.com/solid-titans/pontos-proximos-PAA/blob/main/LICENSE" /></a>
+
+</div>
+
 Trabalho de Projeto e Análise de Algoritmos de pontos próximos
 
 ## Objetivos
