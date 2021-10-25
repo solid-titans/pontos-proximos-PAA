@@ -13,11 +13,8 @@ Trabalho de Projeto e Análise de Algoritmos de pontos próximos
 ### Divisão e conquista:
 
 - Complexidade: O(n*log(n)²).
-
 - Entrada: Uma matriz de n pontos P []
-
 - Saída: a menor distância entre dois pontos em uma determinada matriz.
-
 - Como uma etapa de pré-processamento, a matriz de entrada é classificada de acordo com as coordenadas x.
 1) Encontre o ponto médio na matriz classificada, podemos tomar P [n / 2] como ponto médio.
 2) Divida a matriz dada em duas metades. O primeiro subarray contém pontos de P [0] a P [n / 2]. O segundo subarray contém pontos de P [n / 2 + 1] a P [n-1].
