@@ -16,7 +16,7 @@ Trabalho de Projeto e Análise de Algoritmos de pontos próximos
 python3 divide_and_conquer.py
 ``` 
 
-- Complexidade: O(n*log(n)²).
+- Complexidade: **O(n*log(n)²)**.
 
 1) Encontre o ponto médio na matriz classificada, podemos tomar P [n / 2] como ponto médio.
 
@@ -38,7 +38,7 @@ python3 divide_and_conquer.py
 python3 brute_force.py
 ```
 
-- Complexidade: O(n²)
+- Complexidade: **O(n²)**
 
 1) Escolha o um ponto
 
@@ -56,7 +56,7 @@ python3 brute_force.py
 python3 dc_optimized.py
 ```
 
-- Complexidade: O(n*log(n))
+- Complexidade: **O(n*log(n))**
 
 Este algoritmo é basicamente o algoritmo anterior, porém com a otimização no passo 5.
 
