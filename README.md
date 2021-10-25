@@ -40,6 +40,16 @@ python3 brute_force.py
 
 - Complexidade: O(n²)
 
+1) Escolha o um ponto
+
+2) Escolha outro ponto qualquer 
+
+3) Calcule a distância entre os dois pontos
+
+4) Verifique se a distância entre os dois é a menor (armazenar menor distância em variável auxiliar)
+
+5) Repetir processo até que todos os pontos sejam comparados entre-si
+
 ### Divisão e conquista (otimizado)
 (ainda há fazer)
 ```
