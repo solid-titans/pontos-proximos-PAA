@@ -51,5 +51,5 @@ python3 dc_optimized.py
 Este algoritmo é basicamente o algoritmo anterior, porém com a otimização no passo 5.
 
 ![comparison](img/comparison.jpg)
-
+Fonte: [Basic Algorithms — Finding the Closest Pair](https://towardsdatascience.com/basic-algorithms-finding-the-closest-pair-5fbef41e9d55)
 
