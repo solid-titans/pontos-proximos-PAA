@@ -2,11 +2,8 @@
 # to find the smallest distance from a
 # given set of points.
 import copy
-from brute_force import bruteForce
-from utils import dist
-
-from point import Point
-
+from algorithms.brute_force import bruteForce
+from algorithms.utils import dist
 
 # A utility function to find the
 # distance between the closest points of
@@ -97,11 +94,3 @@ def closest(P, n):
     # Use recursive function closestUtil()
     # to find the smallest distance
     return closestUtil(P, Q, n)
- 
-# Driver code
-P = [Point(2, 3), Point(12, 30),
-     Point(40, 50), Point(5, 1),
-     Point(12, 10), Point(3, 4)]
-n = len(P)
-print("The smallest distance is",
-                   closest(P, n))

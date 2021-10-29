@@ -1,5 +1,4 @@
-from point import Point
-from utils import dist
+from algorithms.utils import dist
 
 # A Brute Force method to return the
 # smallest distance between two points
@@ -12,12 +11,3 @@ def bruteForce(P, n):
                 min_val = dist(P[i], P[j])
  
     return min_val
-
-
-# Driver code
-P = [Point(2, 3), Point(12, 30),
-     Point(40, 50), Point(5, 1),
-     Point(12, 10), Point(3, 4)]
-n = len(P)
-print("The smallest distance is",
-                   bruteForce(P, n))
