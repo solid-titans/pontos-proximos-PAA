@@ -1,16 +1,20 @@
+import random 
+
 # A class to represent a Point in 2D plane
 class Point():
     def __init__(self, x, y):
         self.x = x
         self.y = y
 
+def create_n_points(n):
 
-    def __str__(self):
-        return f"X = {self.x}\nY = {self.y}\n"
+    points = []
 
+    for i in range(n):
 
-    def get_x(self):
-        return self.x
-    
-    def get_y(self):
-        return self.y
+        x = random.randrange(0,10000)
+        y = random.randrange(0,10000)
+
+        points.append(Point(x,y))
+
+    return points
