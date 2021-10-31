@@ -1,8 +1,12 @@
 from algorithms.utils import dist
 
-# A Brute Force method to return the
-# smallest distance between two points
-# in P[] of size n
+"""
+Algoritmo de Brute Force
+Retorna a menor distancia dentre os pontos 
+P : array de pontos
+n :  tamanho do array
+"""
+
 def bruteForce(P, n):
     min_val = float('inf')
     for i in range(n):
