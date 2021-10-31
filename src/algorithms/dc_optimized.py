@@ -1,6 +1,3 @@
-# A divide and conquer program in Python3
-# to find the smallest distance from a
-# given set of points.
 import copy
 from algorithms.brute_force import bruteForce
 from algorithms.utils import dist
@@ -14,9 +11,13 @@ from algorithms.utils import dist
 # Note that this method seems to be
 # a O(n^2) method, but it's a O(n)
 # method as the inner loop runs at most 6 times
+"""
+Função acha a menor distancia entre pontos:
+
+"""
 def stripClosest(strip, size, d):
      
-    # Initialize the minimum distance as d
+    # Inicialize a distância mínima como d
     min_val = d
     
     # Pick all points one by one and

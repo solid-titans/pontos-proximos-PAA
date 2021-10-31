@@ -1,14 +1,13 @@
 import math
 import random
-# A utility function to find the
-# distance between two points
+# Calcula a distancia entre dois ponto
 def dist(p1, p2):
     return math.sqrt((p1.x - p2.x) *
                      (p1.x - p2.x) +
                      (p1.y - p2.y) *
                      (p1.y - p2.y))
 
-
+# Gerador de pontos 
 def point_factory(n, file_path):
     points = []
     
