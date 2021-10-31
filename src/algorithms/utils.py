@@ -1,4 +1,5 @@
 import math
+import random
 # A utility function to find the
 # distance between two points
 def dist(p1, p2):
@@ -6,3 +7,23 @@ def dist(p1, p2):
                      (p1.x - p2.x) +
                      (p1.y - p2.y) *
                      (p1.y - p2.y))
+
+
+def point_factory(n, file_path):
+    points = []
+    
+    for i in range(n):
+        x = random.randint(0, 10000)
+        y = random.randint(0, 10000)
+
+        while [x, y] in points:
+            x = random.randint(0, 10000)
+            y = random.randint(0, 10000)
+        
+        points.append([x, y])
+
+
+    with open(file_path, "w") as f:        
+        for p in points:
+            f.write(f"{p[0]} {p[1]}\n")
+    
