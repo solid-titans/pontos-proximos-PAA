@@ -5,13 +5,17 @@ from algorithms.brute_force import bruteForce
 from algorithms.divide_and_conquer import closest
 from algorithms.dc_optimized import closestOptimized
 from point.point import Point
+from algorithms.utils import point_factory
 
 
 n = 5
 
+
 P = [Point(0, 2), Point(6, 67),
      Point(43, 71), Point(39, 107),
      Point(189, 140)]
+
+point_factory(n, "pontos.txt")
 
 if len(sys.argv) >= 2:
 
