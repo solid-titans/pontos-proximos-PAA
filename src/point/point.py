@@ -6,6 +6,9 @@ class Point():
         self.x = x
         self.y = y
 
+    def __str__(self):
+        return f" x: {self.x}\n y: {self.y}"
+
 def create_n_points(n):
 
     points = []

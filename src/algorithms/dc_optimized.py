@@ -48,15 +48,24 @@ def closestUtil(Px, Py, n):
     midPoint = Px[mid]
  
     #keep a copy of left and right branch
-    Pyl = Py[:mid]
-    Pyr = Py[mid:]
+    Pyl = [] 
+    Pyr = []
+    li = 0
+
+    for i in range(n):
+        if( (Py[i].x < midPoint.x) or ((Py[i].x == midPoint.x) and Py[i].y < midPoint.y)) and (li < mid):
+            Pyl.append(Py[i])
+            li += 1
+        
+        else:
+            Pyr.append(Py[i])
  
     # Consider the vertical line passing
     # through the middle point calculate
     # the smallest distance dl on left
     # of middle point and dr on right side
     dl = closestUtil(Px, Pyl, mid)
-    dr = closestUtil(Px, Pyr, n - mid)
+    dr = closestUtil(Px[mid:], Pyr, n - mid)
  
     # Find the smaller of two distances
     d = min(dl, dr)
@@ -80,8 +89,7 @@ def closestUtil(Px, Py, n):
 def closestOptimized(P, n):
     P.sort(key = lambda point: point.x)
     Q = copy.deepcopy(P)
-    Q.sort(key = lambda point: point.y)   
- 
+    Q.sort(key = lambda point: point.y)
     # Use recursive function closestUtil()
     # to find the smallest distance
     return closestUtil(P, Q, n)
