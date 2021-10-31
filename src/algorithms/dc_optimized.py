@@ -64,7 +64,7 @@ def closestUtil(Px, Py, n):
     # through the middle point calculate
     # the smallest distance dl on left
     # of middle point and dr on right side
-    dl = closestUtil(Px, Pyl, mid)
+    dl = closestUtil(Px, Pyl, mid - 1)
     dr = closestUtil(Px[mid:], Pyr, n - mid)
  
     # Find the smaller of two distances
