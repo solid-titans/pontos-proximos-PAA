@@ -1,6 +1,6 @@
 import random 
 
-# A class to represent a Point in 2D plane
+# Representa pontos no plano 2D
 class Point():
     def __init__(self, x, y):
         self.x = x
@@ -8,7 +8,6 @@ class Point():
 
     def __str__(self):
         return f" x: {self.x}\n y: {self.y}"
-
 def create_n_points(n):
 
     points = []
