@@ -43,7 +43,6 @@ def closestUtil(P, Q, n):
     mid = n // 2
     midPoint = P[mid]
  
-    #keep a copy of left and right branch
     Pl = P[:mid]
     Pr = P[mid:]
  
